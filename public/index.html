@@ -4,17 +4,6 @@
 <head>
 
   <!-- Google tag (gtag.js) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-57TXJBL595"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-57TXJBL595');
-  </script> -->
-  <!-- Gitlab Google Tag -->
-
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-305PJ0JGKK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -28,12 +17,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:image" content="https://gps-at-csui.gitlab.io/img/web-banner.svg">
-  <meta name="description" content="">
+  <meta property="og:image" content="https://gps-at-csui.github.io/img/web-banner.png">
+  <meta name="description" content="Game Playtest+Showcase. Saturday, June 6th 2026 | 11-5 pm (WIB), Faculty of Computer Science, Universitas Indonesia">
   <meta name="keywords" content="GPS at CSUI, Game Playtest+Showcase, Website Links, Links, CSUI, Fasilkom UI">
 
   <title>GPS @ CSUI</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
   <style>
     html {
       height: 100%;
@@ -48,7 +42,7 @@
     .bg {
       /* For browsers that do not support gradients */
       background-color: #eef4ea;
-      background-image: url(img/web-banner.svg), linear-gradient(to bottom right, #dfffca, #eef4ea);
+      background-image: url(img/bg.png), linear-gradient(to bottom right, #dfffca, #eef4ea);
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -63,7 +57,7 @@
       left: 50%;
       -ms-transform: translate(-50%, -20%) scale(1);
       transform: translate(-50%, -20%) scale(1);
-      font-family: monospace, Iosevka Charon Mono;
+      font-family: "Iosevka Charon Mono", monospace;
     }
 
     .bg-mid-center {
@@ -76,7 +70,7 @@
     }
 
     p {
-      font-size: 1.2lh;
+      font-size: 1lh;
       color: #0f4c5b;
       margin: 1.2em 1em .5em 1em;
       text-shadow: 0px 0px 5px #eef4ea, 0px 0px 4px #eef4ea, 0px 0px 3px #eef4ea, 0px 0px 2px #eef4ea
@@ -85,14 +79,14 @@
     .button {
       /* For browsers that do not support gradients */
       background-color: #5a0f2a;
-      background-image: linear-gradient(to top right, #5a0f2a, #98041d);
+      background-image: linear-gradient(to top right, #5a0f2a, #0f4c5b);
       color: #ffffff;
-      font-size: 1.15lh;
       padding: .7lh;
       text-decoration: none;
       border-radius: 3em;
       display: block;
       box-shadow: 1px 1px 3px #d3d8d0, -1px -1px 3px #fa8a28;
+      font-family: "Atkinson Hyperlegible Mono", monospace;
     }
 
     .socials-bg {
@@ -100,7 +94,7 @@
       border-radius: 3em;
       display: inline-block;
       background-color: #5a0f2a;
-      background-image: linear-gradient(to top right, #5a0f2a, #98041d);
+      background-image: linear-gradient(to bottom right, #5a0f2a, #0f4c5b);
       box-shadow: 0 0 1.2em #98041d;
     }
 
@@ -130,34 +124,32 @@
       max-width: 100%;
       text-decoration: none;
       box-shadow: 1px 1px 3px #0f4c5b, -1px -1px 3px #579eb0;
-      width: 523px;
-      height: 300px;
+      width: 95vw;
+      height: calc(50vw + 47px);
     }
 
-    @media screen and (min-width: 532px) {
+    @media screen and (min-width: 352px) {
       .box-embed {
-        width: 523px;
-        height: 300px;
+        height: calc(51vw + 47px);
       }
     }
 
-    @media screen and (min-width: 588px) {
+    @media screen and (min-width: 508px) {
       .box-embed {
-        height: 333px;
+        height: calc(52vw + 47px);
       }
     }
 
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 768px) {
       .box-embed {
-        width: 820px;
-        height: 500px;
+        width: 67vw;
+        height: calc(36.5vw + 47px);
       }
     }
 
-    @media screen and (min-width: 1190px) {
+    @media screen and (min-width: 1280px) {
       .box-embed {
-        width: 1182px;
-        height: 700px;
+        height: calc(37.25vw + 47px);
       }
     }
   </style>
@@ -184,8 +176,11 @@
     <p>Register as Exhibitor</p>
     <a href="https://forms.gle/AEzgg6rNPi5gGkRv7" class="button">Exhibitor Registration</a>
 
+    <p>Register as Sponsor</p>
+    <a href="https://forms.gle/p23JKNvjvn3LDmMq9" class="button">Sponsor Registration</a>
+
     <p style="height: 2em;"></p>
-    <p style="text-shadow: none;">/ᐠ .ᆺ. ᐟ\ﾉ</p>
+    <p style="text-shadow: none; color: #d3d8d0;">/ᐠ .ᆺ. ᐟ\ﾉ</p>
     <p style="height: 1em;"></p>
 
   </div>
